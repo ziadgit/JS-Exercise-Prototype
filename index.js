@@ -119,12 +119,13 @@ Baby.prototype.play = function () {
 
 /* 
   TASK 4
+Referenced and interpolated from https://john-dugan.com/this-in-javascript/
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. The value of this in a function contained the global scope will be the window object. 
+  2. If there is a preceding dot to a function call, the object before the dot is this.
+  3. If a constructor function is used, this is a reference to the specific object that is/was created returned when the construction function is used.
+  4. When call or apply is used, this becomes what was explicitly specified in the parenthesis e.g. this is meetkim in the following example meetJoe.waveHello.call(meetKim);
 */
 
 
